@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  font-family: monospace;
+  background-color: rebeccapurple;
+  color: whitesmoke;
+}
+
+.flex-container {
+  display: flex;
+  background-color: rgb(156, 141, 199);
+  height: 500px;
+  justify-content: space-between;
+  align-items: center;
+}
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: whitesmoke;
+  color: rebeccapurple;
+  margin: 10px;
+}
