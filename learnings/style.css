@@ -1,3 +1,11 @@
+/* 
+    flex-direction: row (main-axis: row-x, cross-axis: column-y)
+    flex-direction: column (main-axis: column-y, cross-axis: row-x)
+    
+    justify-content -> Always used to align on Main axis
+    align-items -> Always used to align on cross axis
+*/
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -8,6 +16,10 @@ body {
   font-family: monospace;
   background-color: rebeccapurple;
   color: whitesmoke;
+}
+
+header {
+  text-align: center;
 }
 
 .flex-container {

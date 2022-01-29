@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>flexbox | mini project</title>
+  </head>
+  <body>
+    <!-- Nav section -->
+    <nav>
+      <div class="container" id="nav-container">
+        <h1 class="logo">FlexBox</h1>
+        <div class="nav-bar">
+          <ul>
+            <li class="nav-item"><a href="#" class="nav-links"> HOME </a></li>
+            <li class="nav-item"><a href="#" class="nav-links"> CONTACT </a></li>
+            <li class="nav-item"><a href="#" class="nav-links"> ABOUT US </a></li>
+          </ul>
+        </div>
+
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <div id="myLinks">
+        <ul>
+          <li class="nav-item"><a href="#" class="nav-links"> HOME </a></li>
+          <li class="nav-item"><a href="#" class="nav-links"> CONTACT </a></li>
+          <li class="nav-item"><a href="#" class="nav-links"> ABOUT US </a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Header section -->
+    <div class="header">
+      <div class="container">
+        <div>
+          <h1>What is flexbox ?</h1>
+          <p>
+            Flexbox is a way of organising the content in webpage is row or column wise , thereby achieving the grid
+            structure easily. Flexbox is a very important and useful tool in CSS.
+          </p>
+          <p>This webpage is done by</p>
+          <p><span>J S Vignesh Kanna with 💖</span> !!!</p>
+        </div>
+        <img src="https://traversymedia.com/images/grid.svg" alt="" />
+      </div>
+    </div>
+
+    <!-- Box section -->
+    <section class="boxes">
+      <h1><span>Projects</span></h1>
+      <div class="container">
+        <div class="box">
+          <h2>Alignment & Space</h2>
+          <p>A more efficient way to lay out, align and distribute space among items in a container</p>
+        </div>
+
+        <div class="box">
+          <h2>Tricky Positioning</h2>
+          <p>
+            Flexbox usually solves tricky problems including how to position or dynamically resize elements on a page
+          </p>
+        </div>
+
+        <div class="box">
+          <h2>Responsive Design</h2>
+          <p>Flexbox makes building a website layout (and making it responsive!) much, much easier</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+      <p>🚀 JS Vignesh Kanna 2022 - Jan 🚀</p>
+    </footer>
+
+    <!-- JS Part for Hamburger menu -->
+    <script>
+      const toggleMenu = () => {
+        let menuEle = document.getElementById("myLinks");
+        let navEle = document.getElementById("nav-container");
+        if (menuEle.style.display === "none") {
+          menuEle.style.display = "block";
+          //   navEle.style.display = "flex";
+        } else {
+          menuEle.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>
